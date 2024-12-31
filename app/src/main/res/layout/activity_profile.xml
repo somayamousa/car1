@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProfileActivity"
+  >
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="175dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="34dp"
+        android:text="@string/click_update_to_update_your_contact_info"
+        android:textColor="#00008B"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+
+    <Button
+        android:id="@+id/updateProfile"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginBottom="184dp"
+        android:backgroundTint="#00008B"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textColorLink="#1B3685"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/imageStyle"
+                android:layout_width="48dp"
+                android:layout_height="43dp"
+                android:layout_margin="5dp"
+
+                app:srcCompat="@drawable/name" />
+
+            <ImageView
+                style="@style/imageStyle"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/email1" />
+
+            <ImageView
+                style="@style/imageStyle"
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+
+                app:srcCompat="@drawable/call" />
+
+            <ImageView
+                style="@style/imageStyle"
+                android:layout_width="46dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/icons8_lgbtq_30" />
+
+            <ImageView
+                style="@style/imageStyle"
+                android:layout_width="42dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/birthdaycake" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="145dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_height="35dp"
+                android:text="First name" />
+
+            <TextView
+                style="@style/txtStyle"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="Last name" />
+
+            <TextView
+                style="@style/txtStyle"
+                android:text="Email" />
+
+            <TextView
+                style="@style/txtStyle"
+                android:text="Phone Number" />
+
+            <TextView
+                style="@style/txtStyle"
+                android:text="Gender" />
+
+            <TextView
+                style="@style/txtStyle"
+                android:text="Birthday" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="229dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/firstName"
+                style="@style/txtStyle1"
+                android:layout_height="35dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/lastName"
+                style="@style/txtStyle1"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/emailtxt"
+                style="@style/txtStyle1"
+                android:shadowColor="#4A4848"
+                android:textColor="#4A4848" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                style="@style/txtStyle1"
+                android:textColor="#4A4848" />
+
+            <TextView
+                android:id="@+id/gender"
+                style="@style/txtStyle1"
+                android:textColor="#4A4848" />
+
+            <TextView
+                android:id="@+id/birthDate"
+                style="@style/txtStyle1"
+                android:textColor="#4A4848" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="155dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/profile" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="116dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#00008B"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:textColorLink="#1B3685"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

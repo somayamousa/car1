@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="345dp"
+        android:layout_height="124dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Car"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Car Make -->
+    <EditText
+        android:id="@+id/editTextCarMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Make"
+        android:layout_below="@id/title"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="text"/>
+
+    <!-- Car Model -->
+    <EditText
+        android:id="@+id/editTextCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Model"
+        android:layout_below="@id/editTextCarMake"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="text"/>
+
+    <!-- Car Year -->
+    <EditText
+        android:id="@+id/editTextCarYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car Year"
+        android:layout_below="@id/editTextCarModel"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="number"/>
+
+    <!-- Car VIN -->
+    <EditText
+        android:id="@+id/editTextCarVIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Car VIN"
+        android:layout_below="@id/editTextCarYear"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="text"/>
+
+    <!-- Car Photo -->
+    <Button
+        android:id="@+id/buttonUploadPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Car Photo"
+        android:backgroundTint="#00008B"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/editTextCarVIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to Add Car -->
+    <Button
+        android:id="@+id/buttonAddCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Car"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/buttonUploadPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:backgroundTint="#00008B"/>
+
+</RelativeLayout>
